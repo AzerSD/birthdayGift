@@ -1,7 +1,5 @@
 const year = new Date().getFullYear();
-let bday = new Date(year, 4, 5, 8, 39).getTime();
-console.log(bday);
-
+let bday = new Date(year, 4, 29, 23, 59, 59).getTime();console.log(bday);
 // countdown
 let timer = setInterval(function () {
 
