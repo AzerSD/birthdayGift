@@ -14,7 +14,9 @@ body {
   margin: auto;
   overflow: hidden;
   width: 650px;
-  height: 480px; }
+  height: 480px; 
+  margin-top: 0px;
+}
 
 audio {
     display: none;
