@@ -1,0 +1,27 @@
+.banner {
+        position: relative;
+        visibility: hidden;
+        width: 50%;
+        height: 60%;
+}
+
+.banner .bannn {
+        position: absolute;
+        width: 72%;
+        margin-left: 65%;
+        margin-top: 5%;
+}
+.banner .bann {
+        position: relative;
+        width: 72%;
+        margin-left: 55%;
+        margin-top: 5%;
+}
+
+#confetti{
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+}
