@@ -7,6 +7,8 @@ let timer = setInterval(function () {
 
   // get today's date
   const today = new Date().getTime();
+  var dd = today.getDate();
+
 
   // get the difference
   const diff = bday - today;
