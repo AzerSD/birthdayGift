@@ -1,5 +1,7 @@
 const year = new Date().getFullYear();
-let bday = new Date(year, 4, 28, 23, 59, 59).getTime();console.log(bday);
+let bday = new Date(year, 4, 28, 23, 59, 59).getTime();
+console.log(bday);
+
 // countdown
 let timer = setInterval(function () {
 
@@ -33,6 +35,7 @@ let timer = setInterval(function () {
     clearInterval(timer);
     document.getElementsByClassName('fade')[0].style.opacity = '0';
     document.getElementsByClassName('fade')[1].style.opacity = '0';
+    document.getElementsByClassName('fade')[2].style.opacity = '0';
 
     setTimeout(function () {
       document.getElementsByClassName('containerr')[0].innerHTML = '';
@@ -51,12 +54,12 @@ let timer = setInterval(function () {
       butt = [
         function light() {
           document.getElementsByClassName('lightrope')[0].style.visibility = 'visible';
-          document.getElementsByTagName('body')[0].style.background = '#153c80';
+          document.getElementsByTagName('body')[0].style.background = '#FFDAB9';
           document.getElementsByClassName('faded')[0].style.opacity = '0';
           setTimeout(function () {
             btn.innerHTML = "play music";
             document.getElementsByClassName('faded')[0].style.opacity = '1';
-          }, 800)
+          }, 2000)
         },
 
         function music() {
@@ -65,7 +68,7 @@ let timer = setInterval(function () {
           setTimeout(function () {
             btn.innerHTML = "let's decorate";
             document.getElementsByClassName('faded')[0].style.opacity = '1';
-          }, 800)
+          }, 100)
         },
 
         function decorate() {
@@ -79,9 +82,16 @@ let timer = setInterval(function () {
         },
 
         function cake() {
+          document.getElementsByClassName('faded')[0].style.opacity = '0';
+          document.getElementsByClassName('containerr')[0].remove();
+          document.getElementsByClassName('wrap')[0].style.display = 'inline';
+          document.getElementsByClassName('wrap')[0].style.opacity = '0';
+          document.getElementsByClassName('wrap')[0].style.visibility = 'visible';
+          document.getElementsByClassName('wrap')[0].style.opacity = '1';
+          
           setTimeout(function () {
             btn.innerHTML = "happy birthday";
-            document.getElementsByClassName('faded')[0].style.opacity = '1';
+            // document.getElementsByClassName('faded')[0].style.opacity = '1';   
           }, 800)
         },
 
@@ -112,4 +122,4 @@ function setime() {
   bday = today + 2000
 
 }
-// setime();
+setime();

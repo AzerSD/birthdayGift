@@ -5,14 +5,21 @@ html {
 
 body {
   display: grid;
-  background: #000; 
   margin: 0 0 0 0;
+  background-color: #000;
+	-webkit-transition:background-color linear 5s;
+	-moz-transition:background-color linear 5s;
+	-o-transition:background-color linear 5s;
+	-ms-transition:background-color linear 5s;
+	transition:background-color linear 5s;
+	overflow:hidden;
 }
+
+
 
 .container {
   position: relative;
   margin: auto;
-  overflow: hidden;
   width: 650px;
   height: 480px; 
   margin-top: 0px;
@@ -194,9 +201,9 @@ span {color: #EF2F3C;}
 
 .fade {
   opacity: 1;
-  transition: opacity .70s ease-in-out;
-  -moz-transition: opacity .70s ease-in-out;
-  -webkit-transition: opacity .70s ease-in-out;
+  transition: opacity .99s ease-in-out;
+  -moz-transition: opacity .99s ease-in-out;
+  -webkit-transition: opacity .99s ease-in-out;
   } 
   .faded {
     opacity: 1;
@@ -244,8 +251,7 @@ span {color: #EF2F3C;}
 .containerr {
     display: flex;
     align-items: center;
-    justify-content: center;
-    
+    justify-content: center;    
 }
 
 .lights {

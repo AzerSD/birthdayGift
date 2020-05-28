@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Montez);
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,400,700,800);
+.container{
+    width:100%
+}
+
+.column{
+    padding:.5rem 1rem;
+    font-size:inherit
+}
+@media (min-width:50rem){
+    .container{
+        width:80%;
+        margin-left:10%;
+        margin-right:10%
+    }
+    .column{
+        float:left
+    }
+    .clearfix:after,.clearfix:before{
+        content:" ";
+        display:table
+    }
+    .clearfix:after{
+        clear:both
+    }
+    .clearfix{
+        *zoom:1
+    }
+    *,:after,:before{
+        -moz-box-sizing:border-box;
+        -webkit-box-sizing:border-box;
+        box-sizing:border-box
+    }
+    body,html{
+        height:100%;
+        width:100%;
+        background-color: #181A1B;
+    }
+    a{
+        text-decoration:none;
+        color:inherit
+    }
+    html{
+        font-size:100%;
+    }
+    .fullpage{
+        height:100%;
+        width:100%;
+        text-align:center;
+        position:relative;
+        -webkit-background-size:100% 100%;
+        background-size:100% 100%;
+    }
+    .quote-block{
+        color:#fff;
+        padding-top:25%;
+        font-size:200%;
+        text-shadow:0 1px 20px rgba(0,0,0,.4)
+    }
+    .quote-block span{
+        display:block;
+        line-height:.85em
+    }
+    .quote-block span.a,.quote-block span.c{
+        font-family:'Alegreya Sans SC',sans-serif
+    }
+    .quote-block span.b,.quote-block span.d{
+        font-family:Montez,cursive;
+        letter-spacing:.04em
+    }
+    #section1{
+        background:transparent 0 0 no-repeat fixed 
+    }
+    #section2{
+        background:transparent 0 0 no-repeat fixed url(http://www.wallpaperup.com/uploads/wallpapers/2015/04/01/651835/18288e226d44aab4796aa83e5149d31b.jpg)
+    }
+    #section3{
+        background:transparent 0 0 no-repeat fixed url(http://pic3-1.yourswallpaper.com/computer/bokeh/blurred_sunset-wallpaper-1366x768.jpg)
+    }
+    #section4{
+        background:transparent 0 0 no-repeat fixed url(https://wallpaperscraft.com/image/flower_glare_blurred_bloom_spring_29818_1920x1080.jpg)
+    }
+    #section6{
+        background:transparent 0 0 no-repeat fixed url(http://getwallpapers.com/wallpaper/full/3/7/b/820296-top-sunflowers-wallpaper-2880x1800-for-iphone-7.jpg)
+    }
+    
+}
