@@ -30,7 +30,7 @@ let timer = setInterval(function () {
   </div>";
 
   //after the counting ends
-  if (days + hours + minutes + seconds == 0) {
+  if ((days + hours + minutes + seconds == 0) || (dd == 29)){
     console.log('fuck')
     clearInterval(timer);
     document.getElementsByClassName('fade')[0].style.opacity = '0';
