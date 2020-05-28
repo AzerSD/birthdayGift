@@ -122,4 +122,4 @@ function setime() {
   bday = today + 2000
 
 }
-setime();
+//setime();
