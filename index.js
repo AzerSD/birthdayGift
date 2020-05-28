@@ -7,8 +7,8 @@ let timer = setInterval(function () {
 
   // get today's date
   const today = new Date().getTime();
-  var dd = today.getDate();
-
+  var tod = new Date();
+  var dd = tod.getDate();
 
   // get the difference
   const diff = bday - today;
@@ -32,7 +32,7 @@ let timer = setInterval(function () {
   </div>";
 
   //after the counting ends
-  if ((days + hours + minutes + seconds == 0) || (dd == 29)){
+  if ((days + hours + minutes + seconds == 0) || (dd == 28)){
     console.log('fuck')
     clearInterval(timer);
     document.getElementsByClassName('fade')[0].style.opacity = '0';
